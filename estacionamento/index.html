@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!--Tempo Estacionamento-->
+        <section class="tempoEstacionamento">
+
+            <!--deposito-->
+            <h1>Tempo Estacionamento</h1>
+
+            <p>Deposite o valor correspondente ao tempo de uso.</p>
+
+
+            <p>R$1,00 = 30min</p>
+            <p>R$1,75 = 60min</p>
+            <p>R$3,00 = 12min (tempo maximo permitido)</p>
+
+            <form>
+                <input type="number" name="deposito" min="1" id="deposito" required>
+                <button type="button" onclick="parquimetro1.depositarValor()">DEPOSITAR</button>
+            </form> 
+
+            <!--infrome de tempo-->
+            <p id="tempoDisponivel"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
