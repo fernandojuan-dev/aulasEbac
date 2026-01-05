@@ -14,11 +14,11 @@ function chutarPalpite() {
     }
 
     // conferindo palpite eo resultado
-    if (palpite < numeroSorteado) {
+    if (palpite < numeroSorteado && tentativas > 0 && palpite >= 1) {
         document.getElementById("resultado").textContent = "Resultado: O número secreto é maior";
         tentativas--;
         document.getElementById("tentativas").textContent = "Tentativas restantes: " + tentativas;
-    } else if (palpite > numeroSorteado) {
+    } else if (palpite > numeroSorteado && tentativas > 0 && palpite <= 100) {
         document.getElementById("resultado").textContent = "Resultado: O número secreto é menor";
         tentativas--;
         document.getElementById("tentativas").textContent = "Tentativas restantes: " + tentativas;
