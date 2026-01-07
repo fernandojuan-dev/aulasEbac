@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempo Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!--ViaCEP-->
+        <section class="viaCep">
+
+            <!--viacep-->
+            <h1>Via Cep</h1>
+
+            <form>
+                <label>CEP</label><br>
+                <input type="number" name="cep" id="cep" required><br>
+
+                <label>Logradouro</label><br>
+                <input type="text" name="logradouro" id="logradouro" required><br>
+
+                <label>Bairro</label><br>
+                <input type="text" name="bairro" id="bairro" required><br>
+
+                <label>Cidade</label><br>
+                <input type="text" name="cidade" id="cidade" required><br>
+
+                <label>Estado</label><br>
+                <input type="text" name="estado" id="estado" required><br>
+                
+                <label>Número</label><br>
+                <input type="number" name="numero" id="numero" required><br>
+
+                <button type="submit">Cadastrar</button>
+
+                
+
+            </form> 
+
+            <!--infrome de tempo-->
+            <p id="tempoDisponivel"></p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
