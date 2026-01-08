@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang=pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main> 
+        
+        <!--Cadastro Cliente-->
+        <section class="cadastroCliente">
+
+            <!--campo do jogo-->
+            <h1>Cadastro Cliente</h1>
+
+            <p>Insira seu Nome e Email para cadastrar</p>
+            
+            <form>
+                <label for="nomeCliente">Seu Nome:</label><br><br>
+                <input type="text" name="nomeCliente" min="1" max="100" id="nomeCliente" required>
+                <br><br>
+                <label for="emailCliente">Seu Email:</label><br><br>
+                <input type="text" name="emailCliente" min="1" max="100" id="emailCliente" required>
+                <br>
+                <button type="button" id="cadastrar">Cadastrar</button>
+
+            </form> <br>
+           
+            <!--Cliente cadastrado-->
+            <ul id="clientesCadastrados">
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
