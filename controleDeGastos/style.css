@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    min-height: 100vh;
+    background: #f2f6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card principal */
+main {
+    background: #ffffff;
+    width: 360px;
+    padding: 25px;
+    border-radius: 12px;
+    border: 2px solid #7fb6e6;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #1e88e5;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* Input e select */
+input,
+select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #b0d4f1;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #1e88e5;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1e88e5;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+/* Linhas de resultado */
+p {
+    background: #f8fbff;
+    border: 1px solid #b0d4f1;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Total destacado */
+#Total {
+    background: #5aa9f5;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+}
