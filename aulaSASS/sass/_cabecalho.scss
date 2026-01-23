@@ -1,0 +1,11 @@
+@use 'variaveis';
+
+.cabecalho {
+    background-color: $cor-primaria;
+    color: white;
+    padding: $espacamento-padrao;
+
+    &__titulo {
+        text-align: center;
+    }
+}
