@@ -1,0 +1,462 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Scroll fluido*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Definindo fontes*/
+body {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+/*Grid da Pagina*/
+.grid {
+    display: grid;
+    min-height: 100vh;
+    margin: 0 auto;
+    grid-template-areas:
+        "header header header header"
+        "home home home home"
+        "sobreNos sobreNos sobreNos sobreNos"
+        "servicos servicos servicos servicos"
+        "depoimentos depoimentos depoimentos depoimentos"
+        "footer footer footer footer"
+    ;
+    justify-content: stretch;
+}
+
+#home,
+#sobreNos,
+#servicos,
+#depoimentos,
+footer {
+    width: 100vw;
+}
+
+h1 {
+    color:#fd540b;
+}
+
+/*ESTILIZANDO O HEADER*/
+header {
+    grid-area: header;
+    max-height: 80px;
+    min-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+}
+
+header img {
+    max-height: 50%;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #fd540b;
+}
+
+/*ESTILIZANDO O HOME*/
+#home {
+    grid-area: home;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecc010;
+}
+
+.banner-desktop {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/*ESTILIZANDO O SOBRE NOS*/
+#sobreNos {
+    grid-area: sobreNos;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#sobreNos p {
+    margin: 20px 0px 0px 0px;
+    max-width: 60vw;
+}
+
+/*ESTILIZANDO O SERVICOS*/
+#servicos {
+    grid-area: servicos;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 0px 0px 0px;
+    max-width: 60vw;
+}
+
+.caixaServico {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.caixaServico:hover {
+    background-color: #fd540b;
+    color: #ffffff;
+}
+
+.caixaServico img {
+    max-width: 80px;
+}
+
+.caixaServico h2,
+.caixaServico p {
+    margin-top: 20px;
+}
+
+/*ESTILIZANDO O DEPOIMENTOS*/
+#depoimentos {
+    grid-area: depoimentos;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+    max-width: 60vw;
+}
+
+.caixaDepoimento {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.caixaDepoimento:hover {
+    background-color: #fd540b;
+    color: #ffffff;
+}
+
+.caixaDepoimento img {
+    max-width: 140px;
+}
+
+.caixaDepoimento h2,
+.caixaDepoimento p {
+    margin-top: 20px;
+}
+
+/*ESTILIZANDO O FOOTER*/
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fd540b;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+#contato {
+    margin: 0 auto;
+    min-width: 60vw;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    text-align: left;
+    color: #ffffff;
+}
+
+.infoContato h2 {
+    margin-bottom: 10px;
+}
+
+.infoContato ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    margin-bottom: 10px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.25s ease;
+    font-family: inherit;
+}
+
+/* ESCONDE CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+
+/* ÍCONE HAMBURGUER */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    display: block;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background-color: #ffffff;
+    color: #fd540b;
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+button[type="submit"]:hover {
+    background-color: #fd540b;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* CLIQUE */
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* ===================== */
+/* MEDIA QUERIES */
+/* ===================== */
+
+/* NOTEBOOK */
+@media (max-width: 1199px) {
+    header {
+        min-width: 80vw;
+    }
+
+    .servicos,
+    .depoimento {
+        max-width: 80vw;
+    }
+
+    #sobreNos p {
+        max-width: 70vw;
+    }
+}
+
+/* TABLET */
+@media (max-width: 1023px) {
+    header {
+        min-width: 90vw;
+    }
+
+    .servicos,
+    .depoimento {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    .caixaServico,
+    .caixaDepoimento {
+        width: 100%;
+    }
+
+    #contato {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .form,
+    .infoContato {
+        width: 100%;
+    }
+
+    #home img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* SMARTPHONE */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 0;
+        min-height: 100px;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    #sobreNos p {
+        max-width: 90vw;
+        font-size: 0.95rem;
+        line-height: 22px;
+    }
+
+    .servicos,
+    .depoimento {
+        max-width: 90vw;
+        gap: 16px;
+    }
+
+    .caixaServico img,
+    .caixaDepoimento img {
+        max-width: 100px;
+        margin: 0 auto;
+    }
+
+    #contato {
+        min-width: 90vw;
+        padding: 20px 0;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.95rem;
+        padding: 12px 14px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+
+    .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+
+
+    .banner-mobile {
+        display: block;
+        max-width: 100vw;
+        margin-top: 10px;
+    }
+
+    .banner-desktop {
+        display: none;
+    }
+
+    
+}

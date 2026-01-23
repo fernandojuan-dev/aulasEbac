@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gravitas+One&family=Limelight&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <img src="images/logo.png" alt="Logo">
+
+            <input type="checkbox" id="menu-toggle">
+
+            <label for="menu-toggle" class="menu-icon">
+                ☰
+            </label>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobreNos">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <img src="images/banner.png" class="banner-desktop" alt="Banner Desktop">
+                <img src="images/bannerMobile.png" class="banner-mobile" alt="Banner Mobile">
+            </section>
+
+            <section id="sobreNos">
+
+                <h1>Sobre Nós</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of
+                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+                    like
+                    Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            </section>
+
+            <section id="servicos">
+
+                <h1>Conheça nossos Serviços</h1>
+                <div class="servicos">
+                    <div class="caixaServico">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 1</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class="caixaServico">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 2</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class="caixaServico">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 3</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class="caixaServico">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 4</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="depoimentos">
+
+                <h1>O que nossos cleintes dizem</h1>
+
+                <div class="depoimento">
+
+                    <div class="caixaDepoimento">
+                        <img src="images/rating.png">
+                        <h2>Maria</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <div class="caixaDepoimento">
+                        <img src="images/rating.png">
+                        <h2>Joao</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of
+                            type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <section id="contato">
+                <div class="infoContato">
+                    <h2>Entre em Contato!</h2>
+                    <ul>
+                        <li>Telefone: (51)9.9123-4567</li>
+                        <li>Email: contato@acw.com.br</li>
+                        <li>Endereço: Rua A, 208</li>
+                    </ul>
+                </div>
+
+                <div class="form">
+                    <h2>Alguma dúvida?</h2>
+                    <form>
+                        <label>Nome</label>
+                        <input type="text" name="nome" required>
+
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+
+                        <label>Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" maxlength="500"
+                            placeholder="Digite sua mensagem aqui..."></textarea>
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
+            </section>
+            <p>Design e Desenvolvimento: Juan Fernando</p>
+        </footer>
+    </div>
+</body>
+
+</html>
