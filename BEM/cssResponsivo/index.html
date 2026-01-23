@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gravitas+One&family=Limelight&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="layout">
+
+        <header class="header">
+            <img src="images/logo.png" alt="Logo" class="header__logo">
+
+            <input type="checkbox" id="menu-toggle" class="header__toggle">
+
+            <label for="menu-toggle" class="header__menu-icon">☰</label>
+
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobreNos">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+
+            <section id="home" class="home">
+                <img src="images/banner.png" class="home__banner home__banner--desktop" alt="Banner Desktop">
+                <img src="images/bannerMobile.png" class="home__banner home__banner--mobile" alt="Banner Mobile">
+            </section>
+
+            <section id="sobreNos" class="about">
+                <h1 class="about__title">Sobre Nós</h1>
+                <p class="about__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+            </section>
+
+            <section id="servicos" class="services">
+                <h1 class="services__title">Conheça nossos Serviços</h1>
+
+                <div class="services__list">
+                    <div class="services__card">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 1</h2>
+                        <p>Lorem Ipsum is simply dummy text.</p>
+                    </div>
+
+                    <div class="services__card">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 2</h2>
+                        <p>Lorem Ipsum is simply dummy text.</p>
+                    </div>
+
+                    <div class="services__card">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 3</h2>
+                        <p>Lorem Ipsum is simply dummy text.</p>
+                    </div>
+
+                    <div class="services__card">
+                        <img src="images/iconservice.png">
+                        <h2>Serviço 4</h2>
+                        <p>Lorem Ipsum is simply dummy text.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="depoimentos" class="testimonials">
+                <h1 class="testimonials__title">O que nossos clientes dizem</h1>
+
+                <div class="testimonials__list">
+                    <div class="testimonials__card">
+                        <img src="images/rating.png">
+                        <h2>Maria</h2>
+                        <p>Lorem Ipsum is simply dummy text.</p>
+                    </div>
+
+                    <div class="testimonials__card">
+                        <img src="images/rating.png">
+                        <h2>João</h2>
+                        <p>Lorem Ipsum is simply dummy text.</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <section id="contato" class="footer__content">
+
+                <div class="footer__info">
+                    <h2>Entre em Contato!</h2>
+                    <ul>
+                        <li>Telefone: (51)9.9123-4567</li>
+                        <li>Email: contato@acw.com.br</li>
+                        <li>Endereço: Rua A, 208</li>
+                    </ul>
+                </div>
+
+                <div class="footer__form">
+                    <h2>Alguma dúvida?</h2>
+                    <form>
+                        <label>Nome</label>
+                        <input type="text" required>
+
+                        <label>Email</label>
+                        <input type="email" required>
+
+                        <label>Mensagem</label>
+                        <textarea rows="4" maxlength="500"></textarea>
+
+                        <button type="submit">ENVIAR</button>
+                    </form>
+                </div>
+
+            </section>
+
+            <p class="footer__credit">Design e Desenvolvimento: Juan Fernando</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

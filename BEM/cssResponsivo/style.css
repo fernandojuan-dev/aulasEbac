@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* BODY */
+body {
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+/* GRID */
+.layout {
+    display: grid;
+    min-height: 100vh;
+    margin: 0 auto;
+    grid-template-areas:
+        "header header header header"
+        "home home home home"
+        "sobreNos sobreNos sobreNos sobreNos"
+        "servicos servicos servicos servicos"
+        "depoimentos depoimentos depoimentos depoimentos"
+        "footer footer footer footer";
+}
+
+#home,
+#sobreNos,
+#servicos,
+#depoimentos,
+footer {
+    width: 100vw;
+}
+
+h1 {
+    color: #fd540b;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    max-height: 80px;
+    min-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    max-height: 50%;
+}
+
+.header__menu-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #fd540b;
+}
+
+/* HOME */
+.home {
+    grid-area: home;
+    display: flex;
+    justify-content: center;
+    background-color: #ecc010;
+}
+
+.home__banner--desktop {
+    width: 100%;
+}
+
+.home__banner--mobile {
+    display: none;
+}
+
+/* ABOUT */
+.about {
+    grid-area: sobreNos;
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.about__text {
+    margin-top: 20px;
+    max-width: 60vw;
+}
+
+/* SERVICES */
+.services {
+    grid-area: servicos;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services__list {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    max-width: 60vw;
+}
+
+.services__card {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.services__card:hover {
+    background-color: #fd540b;
+    color: #ffffff;
+}
+
+.services__card img {
+    max-width: 80px;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+    grid-area: depoimentos;
+    text-align: center;
+}
+
+.testimonials__list {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    max-width: 60vw;
+}
+
+.testimonials__card {
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.testimonials__card:hover {
+    background-color: #fd540b;
+    color: #ffffff;
+}
+
+.testimonials__card img {
+    max-width: 140px;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    background-color: #fd540b;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer__content {
+    min-width: 60vw;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__form form {
+    display: flex;
+    flex-direction: column;
+}
