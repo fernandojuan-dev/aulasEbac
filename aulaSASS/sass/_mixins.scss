@@ -1,0 +1,5 @@
+@use 'variaveis';
+
+@mixin espacamento-padrao{
+    padding: variaveis.$espacamento-padrao;
+}

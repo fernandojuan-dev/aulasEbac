@@ -1,9 +1,10 @@
 @use 'variaveis';
+@use 'mixins';
 
 .cabecalho {
-    background-color: $cor-primaria;
+    background-color: variaveis.$cor-primaria;
     color: white;
-    padding: $espacamento-padrao;
+    @include mixins.espacamento-padrao;
 
     &__titulo {
         text-align: center;

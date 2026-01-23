@@ -1,14 +1,15 @@
 @use 'variaveis';
 
 .conteudo {
-    padding: $espacamento-padrao;
+    padding: variaveis.$espacamento-padrao;
 
     &__paragrafo {
         font-size: 18px;
+        margin-bottom: variaveis.$espacamento-metade;
     }
 
     &____link {
-        color: $cor-primaria;
+        color: variaveis.$cor-primaria;
         text-decoration: none;
         &:hover {
             text-decoration: underline;

@@ -1,2 +1,5 @@
+@use "sass:math";
+
 $cor-primaria: #380413;
 $espacamento-padrao: 20px;
+$espacamento-metade: calc($espacamento-padrao / 2);

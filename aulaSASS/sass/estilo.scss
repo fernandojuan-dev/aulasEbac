@@ -1,19 +1,2 @@
-@use 'variaveis';
 @use 'cabecalho';
 @use 'conteudo';
-
-.conteudo {
-    padding: $espacamento-padrao;
-
-    &__paragrafo {
-        font-size: 18px;
-    }
-
-    &____link {
-        color: $cor-primaria;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
