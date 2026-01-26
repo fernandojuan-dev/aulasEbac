@@ -1,0 +1,51 @@
+@use 'variaveis';
+
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Scroll fluido*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Definindo fontes*/
+body {
+    font-family: "Zalando Sans Expanded", sans-serif;;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    overflow-x: hidden;
+}
+
+/*Grid da Pagina*/
+.grid {
+    display: grid;
+    min-height: 100vh;
+    margin: 0 auto;
+    grid-template-areas:
+        "header header header header"
+        "home home home home"
+        "sobreNos sobreNos sobreNos sobreNos"
+        "servicos servicos servicos servicos"
+        "depoimentos depoimentos depoimentos depoimentos"
+        "footer footer footer footer"
+    ;
+    justify-content: stretch;
+}
+
+.home,
+.sobreNos,
+.servicos,
+.depoimentos,
+footer {
+    width: 100vw;
+}
+
+h1 {
+    color: variaveis.$cor-primaria;
+}

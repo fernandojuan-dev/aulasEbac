@@ -1,0 +1,136 @@
+@use 'variaveis';
+@use 'mixins';
+
+/*ESTILIZANDO O HEADER*/
+.header {
+    grid-area: header;
+    max-height: 80px;
+    min-width: 60vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+
+    img {
+        max-height: 50%;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: variaveis.$cor-primaria;
+}
+
+/*ESTILIZANDO O HOME*/
+.home {
+    grid-area: home;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: variaveis.$cor-secundaria;
+}
+
+/*ESTILIZANDO O SOBRE NOS*/
+.sobreNos {
+    grid-area: sobreNos;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: variaveis.$cor-neutra;
+
+    p {
+        margin: 20px 0px 0px 0px;
+        max-width: 60vw;
+    }
+}
+
+/*ESTILIZANDO O SERVICOS*/
+.servicos {
+    grid-area: servicos;
+    margin: 0 auto;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sessaoServicos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 20px 0px 0px 0px;
+    max-width: 60vw;
+}
+
+/*ESTILIZANDO O DEPOIMENTOS*/
+.depoimentos {
+    grid-area: depoimentos;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 0px 20px 0px;
+    max-width: 60vw;
+}
+
+/*ESTILIZANDO O FOOTER*/
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: variaveis.$cor-primaria;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.contato {
+    margin: 0 auto;
+    min-width: 60vw;
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    text-align: left;
+    color: #ffffff;
+}
+
+.infoContato h2 {
+    margin-bottom: 10px;
+}
+
+.infoContato ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

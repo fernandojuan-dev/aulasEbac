@@ -1,24 +1,4 @@
 /*css reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Scroll fluido*/
-html {
-    scroll-behavior: smooth;
-}
-
-/*Definindo fontes*/
-body {
-    font-family: "Zalando Sans Expanded", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    overflow-x: hidden;
-}
 
 /*Grid da Pagina*/
 .grid {
@@ -36,10 +16,10 @@ body {
     justify-content: stretch;
 }
 
-#home,
-#sobreNos,
-#servicos,
-#depoimentos,
+.home,
+.sobreNos,
+.servicos,
+.depoimentos,
 footer {
     width: 100vw;
 }
@@ -132,7 +112,7 @@ a:hover {
     text-align: center;
 }
 
-.servicos {
+.sessaoServicos {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -335,7 +315,7 @@ button[type="submit"]:active {
         min-width: 90vw;
     }
 
-    .servicos,
+    .sessaoServicos,
     .depoimento {
         flex-direction: column;
         max-width: 90vw;
@@ -389,7 +369,7 @@ button[type="submit"]:active {
         line-height: 22px;
     }
 
-    .servicos,
+    .sessaoServicos,
     .depoimento {
         max-width: 90vw;
         gap: 16px;

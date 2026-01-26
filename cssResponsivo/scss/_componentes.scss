@@ -1,0 +1,131 @@
+@use 'variaveis';
+@use 'mixins';
+
+.banner-desktop {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-mobile {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.caixaServico {
+    background-color: variaveis.$cor-neutra;
+    padding: 20px;
+
+    img {
+        max-width: 80px;
+    }
+
+    h2,
+    p {
+        margin-top: 20px;
+    }
+
+}
+
+.caixaServico:hover {
+    background-color: variaveis.$cor-primaria;
+    color: #ffffff;
+}
+
+.caixaDepoimento {
+    background-color: variaveis.$cor-neutra;
+    padding: 20px;
+
+    img {
+        max-width: 140px;
+    }
+
+    h2,
+    p {
+        margin-top: 20px;
+    }
+}
+
+.caixaDepoimento:hover {
+    background-color: variaveis.$cor-primaria;
+    color: #ffffff;
+}
+
+/* ESCONDE CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+
+/* ÍCONE HAMBURGUER */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu {
+    display: block;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    background-color: #ffffff;
+    color: #fd540b;
+
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER */
+button[type="submit"]:hover {
+    background-color: #fd540b;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* CLIQUE */
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.25s ease;
+    font-family: inherit;
+}
